@@ -1,0 +1,33 @@
+
+/* Class = "UITextView"; text = "与えられた問題が３択の中から１つを選んで下さい。すべての問題に答え終わると、あなたの「一般常識レベル」が表示されます。"; ObjectID = "0UR-GE-O8M"; */
+"0UR-GE-O8M.text" = "与えられた問題が３択の中から１つを選んで下さい。すべての問題に答え終わると、あなたの「一般常識レベル」が表示されます。";
+
+/* Class = "UIButton"; normalTitle = "タイトルへ戻る"; ObjectID = "97b-UG-l5g"; */
+"97b-UG-l5g.normalTitle" = "タイトルへ戻る";
+
+/* Class = "UITextView"; text = "今回のクリスマスキャンプ、参加人数は何人でしょう？"; ObjectID = "LtN-I0-zAN"; */
+"LtN-I0-zAN.text" = "今回のクリスマスキャンプ、参加人数は何人でしょう？";
+
+/* Class = "UIButton"; normalTitle = "約700人"; ObjectID = "MRD-48-CKy"; */
+"MRD-48-CKy.normalTitle" = "約700人";
+
+/* Class = "UILabel"; text = "1.5"; ObjectID = "YX0-64-Tt2"; */
+"YX0-64-Tt2.text" = "1.5";
+
+/* Class = "UIButton"; normalTitle = "約600人"; ObjectID = "kki-U3-jv0"; */
+"kki-U3-jv0.normalTitle" = "約600人";
+
+/* Class = "UILabel"; text = "バージョン"; ObjectID = "lO4-yE-uO3"; */
+"lO4-yE-uO3.text" = "バージョン";
+
+/* Class = "UIButton"; normalTitle = "約1000人"; ObjectID = "n7F-Li-K3q"; */
+"n7F-Li-K3q.normalTitle" = "約1000人";
+
+/* Class = "UILabel"; text = "結果"; ObjectID = "rT1-oF-jss"; */
+"rT1-oF-jss.text" = "結果";
+
+/* Class = "UILabel"; text = "クイズ"; ObjectID = "sL8-ZN-vPH"; */
+"sL8-ZN-vPH.text" = "クイズ";
+
+/* Class = "UIButton"; normalTitle = "About"; ObjectID = "z4L-J4-IB0"; */
+"z4L-J4-IB0.normalTitle" = "About";
