@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class QuizViewController2: UIViewController {
     //クイズを格納する配列
     var quizArray = [[Any]]()
     
@@ -22,14 +22,15 @@ class QuizViewController: UIViewController {
     @IBOutlet var choiceButtons1: UIButton!
     @IBOutlet var choiceButtons2: UIButton!
     @IBOutlet var choiceButtons3: UIButton!
+    @IBOutlet var choiceButtons4: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()//Life is Tech!のロゴTシャツにない色は？
         
         //------------------------ここから下にクイズを書く------------------------//
-        quizArray.append(["今回のクリスマスキャンプ、参加人数は何人でしょう？", "約600人", "約1000人", "約700人", 3])
-        quizArray.append(["2020年の夏のイベントといえば？", "東京オリンピック", "オリンピック", "あるわけないだろ", 1])
-         quizArray.append(["のび太のママ「玉子」がやらかしたとんでもないことは？", "卵になった", "のび太の存在を忘れた", "物を盗んだ",2])
+        quizArray.append(["聖徳太子のお供は誰？", "蘇我馬子", "小野妹子", "中大兄皇子", "藤原不比等", 3])
+        quizArray.append(["聖徳太子の小さい頃の夢は？", "エンジニア", "YouTuber", "国家体制の確立", "消防士", 1])
+         quizArray.append(["最近聖徳太子が影で「妹子と〇〇は仲良し」と言った。それは何か。", "卵になった", "のび太の存在を忘れた", "物を盗んだ",2])
          quizArray.append(["2020年何年（干支）でしょうか？", "犬", "亥", "ネズミ", 3])
         quizArray.append(["新型コロナウイルスが流行し始めたのは、いつでしょう？","2019年","2020年","知らん",1])
         quizArray.append(["このクイズはいつ終わるでしょうか？" , "今でしょう！", "つづくだろ！", "うどん食いたい",2])
@@ -84,5 +85,6 @@ class QuizViewController: UIViewController {
         }
     }
 }
+
 
 

@@ -12,6 +12,7 @@
 		59E2A158276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 59E2A157276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg */; };
 		59E2A15C276C5417003D69E9 /* App User icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E2A15B276C5417003D69E9 /* App User icon.png */; };
 		59E9B16724D4F14500F90AAA /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59E9B16924D4F14500F90AAA /* infoPlist.strings */; };
+		59FAD7A62AB1F5A200589634 /* QuizViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FAD7A52AB1F5A200589634 /* QuizViewController2.swift */; };
 		BEE1F9BC23B5DD3D0011AF05 /* true.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE1F9AB23B5DD3D0011AF05 /* true.png */; };
 		BEE1F9BD23B5DD3D0011AF05 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1F9AC23B5DD3D0011AF05 /* TopViewController.swift */; };
 		BEE1F9BE23B5DD3D0011AF05 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1F9AD23B5DD3D0011AF05 /* ResultViewController.swift */; };
@@ -35,6 +36,7 @@
 		59E9B16324D4F0C000F90AAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		59E9B16424D4F0C000F90AAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		59E9B16824D4F14500F90AAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/infoPlist.strings; sourceTree = "<group>"; };
+		59FAD7A52AB1F5A200589634 /* QuizViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController2.swift; sourceTree = "<group>"; };
 		BEE1F9AB23B5DD3D0011AF05 /* true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true.png; sourceTree = "<group>"; };
 		BEE1F9AC23B5DD3D0011AF05 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		BEE1F9AD23B5DD3D0011AF05 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				BEE1F9AC23B5DD3D0011AF05 /* TopViewController.swift */,
 				BEE1F9AD23B5DD3D0011AF05 /* ResultViewController.swift */,
 				BEE1F9AE23B5DD3D0011AF05 /* QuizViewController.swift */,
+				59FAD7A52AB1F5A200589634 /* QuizViewController2.swift */,
 				BEE1F9AF23B5DD3D0011AF05 /* LaunchScreen.xib */,
 				BEE1F9B123B5DD3D0011AF05 /* Main.storyboard */,
 				59E2A157276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg */,
@@ -201,6 +204,7 @@
 				BEE1F9BF23B5DD3D0011AF05 /* QuizViewController.swift in Sources */,
 				BEE1F9BD23B5DD3D0011AF05 /* TopViewController.swift in Sources */,
 				BEE1F9BE23B5DD3D0011AF05 /* ResultViewController.swift in Sources */,
+				59FAD7A62AB1F5A200589634 /* QuizViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
