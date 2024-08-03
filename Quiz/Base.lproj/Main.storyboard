@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="31u-9w-wZe">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top View Controller-->
+        <!--クイズ-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="TopViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="与えられた問題が３択の中から１つを選んで下さい。すべての問題に答え終わると、あなたの「一般常識レベル」が表示されます。" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-GE-O8M">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="与えられた問題が３択の中から１つを選んで下さい。すべての問題に答え終わると、あなたの「一般常識レベル」が表示されます。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-GE-O8M">
                                 <rect key="frame" x="60" y="255" width="294" height="134"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -27,7 +27,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-Az-agM">
-                                <rect key="frame" x="74" y="570" width="266" height="102"/>
+                                <rect key="frame" x="74" y="521" width="266" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="li6-p6-QCq"/>
                                 </constraints>
@@ -86,17 +86,36 @@
                             <constraint firstItem="z4L-J4-IB0" firstAttribute="leading" secondItem="olW-jU-WC7" secondAttribute="leading" constant="8" id="sRQ-bp-tlZ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="クイズ" id="GfR-L9-DHz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="441"/>
+            <point key="canvasLocation" x="-1081" y="385"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Nf5-ZG-69g">
+            <objects>
+                <tabBarController id="31u-9w-wZe" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gcE-T9-b7O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="5GV-JA-Eh4"/>
+                        <segue destination="ZE6-gM-tT6" kind="relationship" relationship="viewControllers" id="Fr9-0T-3Ji"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6P-J4-2JI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2260" y="1327"/>
+        </scene>
+        <!--Quiz View Controller2-->
         <scene sceneID="ZUF-Em-s6p">
             <objects>
-                <viewController id="NdR-23-9rx" sceneMemberID="viewController">
+                <viewController id="NdR-23-9rx" customClass="QuizViewController2" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xdg-ta-qZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="今回のクリスマスキャンプ、参加人数は何人でしょう？" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZiV-VG-hQA">
@@ -181,8 +200,16 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AlS-I2-5xI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.5527758002281189" green="0.80948126316070557" blue="0.91554492712020874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Muf-SG-hRV"/>
+                    <connections>
+                        <outlet property="choiceButtons1" destination="VIA-6t-qdk" id="WJX-G8-MSx"/>
+                        <outlet property="choiceButtons2" destination="tBh-J4-4RD" id="uUp-7D-7sl"/>
+                        <outlet property="choiceButtons3" destination="a6k-BF-zMd" id="hnr-R7-Mha"/>
+                        <outlet property="choiceButtons4" destination="4mF-G4-WHT" id="gwd-Tb-wp9"/>
+                        <outlet property="quizTextView" destination="ZiV-VG-hQA" id="HrR-cF-Api"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04X-KZ-AO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,7 +308,7 @@
                                     <action selector="choiceAnswerWithSender:" destination="BUj-kM-nEE" eventType="touchUpInside" id="slJ-Tf-Ik2"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="今回のクリスマスキャンプ、参加人数は何人でしょう？" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-I0-zAN">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="今回のクリスマスキャンプ、参加人数は何人でしょう？" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-I0-zAN">
                                 <rect key="frame" x="40" y="42" width="295" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -365,22 +392,54 @@
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="rT1-oF-jss" id="dOe-ea-SwH"/>
+                        <segue destination="NdR-23-9rx" kind="presentation" id="WHe-wc-4Ls"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhB-CX-kcE" sceneMemberID="firstResponder"/>
                 <exit id="sc2-i2-Bpk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1611.5942028985507" y="384.375"/>
+            <point key="canvasLocation" x="2091" y="789"/>
         </scene>
-        <!--Quiz View Controller2-->
-        <scene sceneID="xPX-Oi-By6">
+        <!--聖徳太子ver-->
+        <scene sceneID="Xxh-Lr-qLe">
             <objects>
-                <viewController id="9rg-44-oGN" customClass="QuizViewController2" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Thn-LY-3rX">
+                <viewController id="ZE6-gM-tT6" customClass="TopViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRs-3A-oHT" customClass="UIToolbar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-Do-VoS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="与えられた問題が３択の中から１つを選んで下さい。すべての問題に答え終わると、あなたの「一般常識レベル」が表示されます。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dN-VD-YfE">
+                                <rect key="frame" x="60" y="255" width="294" height="134"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="Dsf-rw-BMA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W8" family="Hiragino Sans" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1B-vZ-96c">
+                                <rect key="frame" x="74" y="521" width="266" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="HmB-oC-9yX"/>
+                                </constraints>
+                                <state key="normal" image="start.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NdR-23-9rx" kind="show" id="wH9-B3-QqW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聖徳太子の楽しいクイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-s8-rep">
+                                <rect key="frame" x="45" y="127" width="309" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ggy-Na-6I0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-vQ-yJ4">
                                 <rect key="frame" x="30" y="597" width="66" height="48"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="About"/>
@@ -390,35 +449,48 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kgx-39-W7j">
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyf-Gu-7q3">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="U92-wW-yEg"/>
-                                    <tabBarItem systemItem="more" id="9Iu-lU-0Dr"/>
+                                    <tabBarItem title="クイズ1" id="WWz-CW-bi6"/>
+                                    <tabBarItem title="クイズ2" id="H9T-aq-ENH"/>
                                 </items>
                             </tabBar>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="0Py-bp-94Q"/>
-                        <color key="backgroundColor" red="0.58844214679999995" green="0.80934780839999998" blue="0.3686693311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="CUj-bh-rHU"/>
+                        <color key="backgroundColor" red="0.5527758002281189" green="0.80948126316070557" blue="0.91554492712020874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1fZ-Do-VoS" firstAttribute="bottom" secondItem="0Py-bp-94Q" secondAttribute="bottom" id="RIW-wg-Xz6"/>
-                            <constraint firstItem="1fZ-Do-VoS" firstAttribute="leading" secondItem="0Py-bp-94Q" secondAttribute="leading" constant="8" id="zjI-5d-A61"/>
+                            <constraint firstItem="uZa-s8-rep" firstAttribute="top" secondItem="CUj-bh-rHU" secondAttribute="top" constant="83" id="41p-JD-mY4"/>
+                            <constraint firstItem="6dN-VD-YfE" firstAttribute="centerX" secondItem="xRs-3A-oHT" secondAttribute="centerX" id="6Gh-rL-4TB"/>
+                            <constraint firstItem="UMh-vQ-yJ4" firstAttribute="bottom" secondItem="CUj-bh-rHU" secondAttribute="bottom" id="BIt-zT-yKG"/>
+                            <constraint firstItem="uZa-s8-rep" firstAttribute="leading" secondItem="CUj-bh-rHU" secondAttribute="leading" constant="45" id="FZc-HH-uoW"/>
+                            <constraint firstItem="6dN-VD-YfE" firstAttribute="leading" secondItem="CUj-bh-rHU" secondAttribute="leading" constant="60" id="Fke-hh-W1z"/>
+                            <constraint firstItem="x1B-vZ-96c" firstAttribute="leading" secondItem="CUj-bh-rHU" secondAttribute="leading" constant="74" id="WrV-6s-aNg"/>
+                            <constraint firstItem="UMh-vQ-yJ4" firstAttribute="leading" secondItem="CUj-bh-rHU" secondAttribute="leading" constant="8" id="f5O-sj-0kn"/>
+                            <constraint firstItem="uZa-s8-rep" firstAttribute="trailing" secondItem="6dN-VD-YfE" secondAttribute="trailing" id="min-uk-APb"/>
+                            <constraint firstItem="6dN-VD-YfE" firstAttribute="centerX" secondItem="x1B-vZ-96c" secondAttribute="centerX" id="nuF-Lp-381"/>
+                            <constraint firstItem="CUj-bh-rHU" firstAttribute="bottom" secondItem="x1B-vZ-96c" secondAttribute="bottom" constant="190" id="pJ4-Uc-GWu"/>
+                            <constraint firstItem="6dN-VD-YfE" firstAttribute="top" secondItem="uZa-s8-rep" secondAttribute="bottom" constant="76" id="yPw-km-M5g"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="聖徳太子ver" id="ojU-Hy-2yI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6be-dC-TPN" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgo-uc-ayN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="1175"/>
+            <point key="canvasLocation" x="-1081" y="1349"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wH9-B3-QqW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="icon.png" width="21.600000381469727" height="21.600000381469727"/>
         <image name="start.png" width="148.32000732421875" height="60.479999542236328"/>
         <image name="なにいうてるかわからん.png" width="384" height="384"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
