@@ -142,6 +142,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="choiceAnswerWithSender:" destination="BUj-kM-nEE" eventType="touchUpInside" id="Cf4-Ix-NtR"/>
+                                    <action selector="choiceAnswerWithSender:" destination="NdR-23-9rx" eventType="touchUpInside" id="Uk9-oj-ixj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBh-J4-4RD">
@@ -160,6 +161,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="choiceAnswerWithSender:" destination="BUj-kM-nEE" eventType="touchUpInside" id="2Tf-lh-vcb"/>
+                                    <action selector="choiceAnswerWithSender:" destination="NdR-23-9rx" eventType="touchUpInside" id="PRO-ZN-GXX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-BF-zMd">
@@ -177,6 +179,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="choiceAnswerWithSender:" destination="NdR-23-9rx" eventType="touchUpInside" id="mWu-cd-SgR"/>
                                     <action selector="choiceAnswerWithSender:" destination="BUj-kM-nEE" eventType="touchUpInside" id="tdo-0O-Jrv"/>
                                 </connections>
                             </button>
@@ -195,6 +198,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="choiceAnswerWithSender:" destination="NdR-23-9rx" eventType="touchUpInside" id="eXG-FJ-jNo"/>
                                     <action selector="choiceAnswerWithSender:" destination="BUj-kM-nEE" eventType="touchUpInside" id="yEN-AL-brN"/>
                                 </connections>
                             </button>
@@ -209,11 +213,12 @@
                         <outlet property="choiceButtons3" destination="a6k-BF-zMd" id="hnr-R7-Mha"/>
                         <outlet property="choiceButtons4" destination="4mF-G4-WHT" id="gwd-Tb-wp9"/>
                         <outlet property="quizTextView" destination="ZiV-VG-hQA" id="HrR-cF-Api"/>
+                        <segue destination="owP-hA-BJF" kind="presentation" id="QP4-1T-uvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04X-KZ-AO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="1199"/>
+            <point key="canvasLocation" x="445" y="1633"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Cw7-x5-rAR">
@@ -353,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtn-0m-iER" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936.23188405797111" y="385.04464285714283"/>
+            <point key="canvasLocation" x="857" y="490"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Xls-aW-LT9">
@@ -392,7 +397,6 @@
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="rT1-oF-jss" id="dOe-ea-SwH"/>
-                        <segue destination="NdR-23-9rx" kind="presentation" id="WHe-wc-4Ls"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhB-CX-kcE" sceneMemberID="firstResponder"/>
@@ -483,7 +487,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wH9-B3-QqW"/>
+        <segue reference="xvM-JA-bwI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icon.png" width="21.600000381469727" height="21.600000381469727"/>
