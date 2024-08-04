@@ -213,7 +213,7 @@
                         <outlet property="choiceButtons3" destination="a6k-BF-zMd" id="hnr-R7-Mha"/>
                         <outlet property="choiceButtons4" destination="4mF-G4-WHT" id="gwd-Tb-wp9"/>
                         <outlet property="quizTextView" destination="ZiV-VG-hQA" id="HrR-cF-Api"/>
-                        <segue destination="owP-hA-BJF" kind="presentation" id="QP4-1T-uvx"/>
+                        <segue destination="H5C-cV-MKS" kind="presentation" id="oTq-7t-j4l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04X-KZ-AO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -485,10 +485,51 @@
             </objects>
             <point key="canvasLocation" x="-1081" y="1349"/>
         </scene>
+        <!--Result View Controller2-->
+        <scene sceneID="JDx-3c-B4l">
+            <objects>
+                <viewController id="H5C-cV-MKS" customClass="ResultViewController2" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esh-h3-yXW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-cs-Rc5">
+                                <rect key="frame" x="130" y="349" width="154" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="タイトルへ戻る">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="q6p-FS-WOT" kind="unwind" unwindAction="backWithSegue:" id="o2h-RA-tEY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" highlighted="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S44-UR-ZD7">
+                                <rect key="frame" x="19" y="14" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PLp-sk-KQG"/>
+                        <color key="backgroundColor" red="0.5527758002281189" green="0.80948126316070557" blue="0.91554492712020874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="S44-UR-ZD7" id="MGu-09-mrA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SF1-8C-H6d" sceneMemberID="firstResponder"/>
+                <exit id="q6p-FS-WOT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2116" y="1565"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="xvM-JA-bwI"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="icon.png" width="21.600000381469727" height="21.600000381469727"/>
         <image name="start.png" width="148.32000732421875" height="60.479999542236328"/>

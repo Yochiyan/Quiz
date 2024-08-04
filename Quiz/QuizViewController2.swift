@@ -56,10 +56,11 @@ class QuizViewController2: UIViewController {
         choiceButtons1.setTitle(quizArray[0][1] as? String, for: .normal)
         choiceButtons2.setTitle(quizArray[0][2] as? String, for: .normal)
         choiceButtons3.setTitle(quizArray[0][3] as? String, for: .normal)
+        choiceButtons4.setTitle(quizArray[0][4] as? String, for: .normal)
     }
     
     @IBAction func choiceAnswer(sender: UIButton) {
-        if quizArray[0][4] as! Int == sender.tag {
+        if quizArray[0][5] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer+=1
         }
@@ -80,7 +81,7 @@ class QuizViewController2: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toResultView") {
             
-            let resultView = segue.destination as! ResultViewController
+            let resultView = segue.destination as! ResultViewController2
             resultView.correctAnswer = self.correctAnswer
         }
     }

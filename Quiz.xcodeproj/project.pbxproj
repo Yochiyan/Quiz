@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5908921224A9DF2F0041AC47 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5908921124A9DF2F0041AC47 /* icon.png */; };
+		59752D7C2C5EFED4000D2EBC /* ResultViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59752D7B2C5EFED4000D2EBC /* ResultViewController2.swift */; };
 		59D57152256B87F000D3BF91 /* なにいうてるかわからん.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D57151256B87F000D3BF91 /* なにいうてるかわからん.png */; };
 		59E2A158276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 59E2A157276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg */; };
 		59E2A15C276C5417003D69E9 /* App User icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E2A15B276C5417003D69E9 /* App User icon.png */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		5908921124A9DF2F0041AC47 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Quiz/Images.xcassets/AppIcon.appiconset/icon.png; sourceTree = "<group>"; };
+		59752D7B2C5EFED4000D2EBC /* ResultViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController2.swift; sourceTree = "<group>"; };
 		59D57151256B87F000D3BF91 /* なにいうてるかわからん.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "なにいうてるかわからん.png"; sourceTree = "<group>"; };
 		59E2A157276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2021-03-11--20-58-031.jpeg"; sourceTree = "<group>"; };
 		59E2A15B276C5417003D69E9 /* App User icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App User icon.png"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				BEE1F9AB23B5DD3D0011AF05 /* true.png */,
 				BEE1F9AC23B5DD3D0011AF05 /* TopViewController.swift */,
 				BEE1F9AD23B5DD3D0011AF05 /* ResultViewController.swift */,
+				59752D7B2C5EFED4000D2EBC /* ResultViewController2.swift */,
 				BEE1F9AE23B5DD3D0011AF05 /* QuizViewController.swift */,
 				59FAD7A52AB1F5A200589634 /* QuizViewController2.swift */,
 				BEE1F9AF23B5DD3D0011AF05 /* LaunchScreen.xib */,
@@ -204,6 +207,7 @@
 				BEE1F9BF23B5DD3D0011AF05 /* QuizViewController.swift in Sources */,
 				BEE1F9BD23B5DD3D0011AF05 /* TopViewController.swift in Sources */,
 				BEE1F9BE23B5DD3D0011AF05 /* ResultViewController.swift in Sources */,
+				59752D7C2C5EFED4000D2EBC /* ResultViewController2.swift in Sources */,
 				59FAD7A62AB1F5A200589634 /* QuizViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
