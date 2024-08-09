@@ -1,5 +1,5 @@
 //
-//  QuizViewController.swift
+//  QuizViewController2.swift
 //  Quiz
 //
 //  Created by litech on 2015/02/10.
@@ -32,7 +32,7 @@ class QuizViewController2: UIViewController {
         quizArray.append(["聖徳太子の小さい頃の夢は？", "エンジニア", "YouTuber", "国家体制の確立", "消防士", 1])
          quizArray.append(["最近聖徳太子が影で「妹子と〇〇は仲良し」と言った。それは何か。", "ブリ", "サケ", "クマ","ツナ",2])
          quizArray.append(["遣隋使で隋の国王と顔を合わせたが相手の見た目はなんだったか。", "🐙", "👤", "🐈", "🐅", 1])
-        quizArray.append(["聖徳太子の必殺技を答えてください。","飛鳥文化アタック","摂政チョップ","憲法十七条ちゃぶ台返し", "湯呑みマッスルアタック",1,2,4])
+        quizArray.append(["聖徳太子の必殺技を答えてください。","飛鳥文化アタック","摂政チョップ","憲法十七条ちゃぶ台返し", "湯呑みマッスルアタック",1])
         quizArray.append(["妹子が法隆寺に遊びに来た時、聖徳太子にあげたお土産を挙げてください。" , "人形", "しゃもじ", "石と草", "湯呑み",3])
                quizArray.append(["ここで歴史上の聖徳太子の本名をお答えください。","瀬戸大橋","宇多田ヒカル","厩戸皇子", "西郷隆盛",3])
                
@@ -40,11 +40,8 @@ class QuizViewController2: UIViewController {
                
                quizArray.append(["法隆寺を建てる時ケチって建設員1人しか雇わなかった。建築にあと何年かかることになったか。","5年","25年","55年", "1年",2])
                
-        
-    
-                
         //------------------------ここから上にクイズを書く------------------------//
-
+        quizArray.shuffle()
         choiceQuiz()
     
     }
@@ -75,14 +72,14 @@ class QuizViewController2: UIViewController {
     }
     
     func performSegueToResult() {
-        performSegue(withIdentifier: "toResultView", sender: nil)
+        performSegue(withIdentifier: "toResultView2", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toResultView") {
+        if (segue.identifier == "toResultView2") {
             
-            let resultView = segue.destination as! ResultViewController2
-            resultView.correctAnswer = self.correctAnswer
+            let resultView2 = segue.destination as! ResultViewController2
+            resultView2.correctAnswer = self.correctAnswer
         }
     }
 }

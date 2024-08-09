@@ -43,7 +43,7 @@ class QuizViewController: UIViewController {
     
                 
         //------------------------ここから上にクイズを書く------------------------//
-
+        quizArray.shuffle()
         choiceQuiz()
     
     }
@@ -73,7 +73,7 @@ class QuizViewController: UIViewController {
     }
     
     func performSegueToResult() {
-        performSegue(withIdentifier: "toResultView", sender: nil)
+        performSegue(withIdentifier: "toResultView", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

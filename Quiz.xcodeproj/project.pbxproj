@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59078ADE2C648CC800F1931B /* クイズ大会.png in Resources */ = {isa = PBXBuildFile; fileRef = 59078ADD2C648CC800F1931B /* クイズ大会.png */; };
 		5908921224A9DF2F0041AC47 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5908921124A9DF2F0041AC47 /* icon.png */; };
 		59752D7C2C5EFED4000D2EBC /* ResultViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59752D7B2C5EFED4000D2EBC /* ResultViewController2.swift */; };
 		59D57152256B87F000D3BF91 /* なにいうてるかわからん.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D57151256B87F000D3BF91 /* なにいうてるかわからん.png */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59078ADD2C648CC800F1931B /* クイズ大会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "クイズ大会.png"; sourceTree = "<group>"; };
 		5908921124A9DF2F0041AC47 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Quiz/Images.xcassets/AppIcon.appiconset/icon.png; sourceTree = "<group>"; };
 		59752D7B2C5EFED4000D2EBC /* ResultViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController2.swift; sourceTree = "<group>"; };
 		59D57151256B87F000D3BF91 /* なにいうてるかわからん.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "なにいうてるかわからん.png"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				C7343E9C1A89986900D857EA /* Products */,
 				5908921124A9DF2F0041AC47 /* icon.png */,
 				59D57151256B87F000D3BF91 /* なにいうてるかわからん.png */,
+				59078ADD2C648CC800F1931B /* クイズ大会.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +189,7 @@
 				BEE1F9C023B5DD3D0011AF05 /* LaunchScreen.xib in Resources */,
 				BEE1F9BC23B5DD3D0011AF05 /* true.png in Resources */,
 				5908921224A9DF2F0041AC47 /* icon.png in Resources */,
+				59078ADE2C648CC800F1931B /* クイズ大会.png in Resources */,
 				BEE1F9C323B5DD3D0011AF05 /* Default-568h@2x.png in Resources */,
 				59E2A158276C4D31003D69E9 /* 2021-03-11--20-58-031.jpeg in Resources */,
 				59E2A15C276C5417003D69E9 /* App User icon.png in Resources */,

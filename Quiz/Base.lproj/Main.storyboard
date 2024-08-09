@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BUj-kM-nEE" kind="show" id="kKi-UM-v8c"/>
+                                    <segue destination="BUj-kM-nEE" kind="presentation" modalPresentationStyle="fullScreen" id="oSG-h7-SlM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-ZN-vPH">
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1081" y="385"/>
+            <point key="canvasLocation" x="-1081" y="474"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Nf5-ZG-69g">
@@ -108,14 +108,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6P-J4-2JI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2260" y="1327"/>
+            <point key="canvasLocation" x="-2328" y="852"/>
         </scene>
         <!--Quiz View Controller2-->
         <scene sceneID="ZUF-Em-s6p">
             <objects>
                 <viewController id="NdR-23-9rx" customClass="QuizViewController2" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xdg-ta-qZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="今回のクリスマスキャンプ、参加人数は何人でしょう？" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZiV-VG-hQA">
@@ -202,6 +202,10 @@
                                     <action selector="choiceAnswerWithSender:" destination="BUj-kM-nEE" eventType="touchUpInside" id="yEN-AL-brN"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="クイズ大会.png" translatesAutoresizingMaskIntoConstraints="NO" id="TsR-h9-zgL">
+                                <rect key="frame" x="28" y="575" width="358" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AlS-I2-5xI"/>
                         <color key="backgroundColor" red="0.5527758002281189" green="0.80948126316070557" blue="0.91554492712020874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -213,12 +217,12 @@
                         <outlet property="choiceButtons3" destination="a6k-BF-zMd" id="hnr-R7-Mha"/>
                         <outlet property="choiceButtons4" destination="4mF-G4-WHT" id="gwd-Tb-wp9"/>
                         <outlet property="quizTextView" destination="ZiV-VG-hQA" id="HrR-cF-Api"/>
-                        <segue destination="H5C-cV-MKS" kind="presentation" id="oTq-7t-j4l"/>
+                        <segue destination="H5C-cV-MKS" kind="presentation" identifier="toResultView2" id="oTq-7t-j4l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04X-KZ-AO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="1633"/>
+            <point key="canvasLocation" x="290" y="1349"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Cw7-x5-rAR">
@@ -245,20 +249,6 @@
                                 <rect key="frame" x="102" y="191" width="210" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="バージョン" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO4-yE-uO3">
-                                <rect key="frame" x="125" y="467" width="164" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-64-Tt2">
-                                <rect key="frame" x="125" y="501" width="164" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dop-2O-FC7"/>
                         <color key="backgroundColor" red="0.58844214679999995" green="0.80934780839999998" blue="0.3686693311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -274,7 +264,7 @@
             <objects>
                 <viewController id="BUj-kM-nEE" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TLH-RG-UNz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kki-U3-jv0">
@@ -358,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtn-0m-iER" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="490"/>
+            <point key="canvasLocation" x="383" y="473"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Xls-aW-LT9">
@@ -402,7 +392,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhB-CX-kcE" sceneMemberID="firstResponder"/>
                 <exit id="sc2-i2-Bpk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2091" y="789"/>
+            <point key="canvasLocation" x="1693" y="473"/>
         </scene>
         <!--聖徳太子ver-->
         <scene sceneID="Xxh-Lr-qLe">
@@ -430,7 +420,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NdR-23-9rx" kind="show" id="wH9-B3-QqW"/>
+                                    <segue destination="NdR-23-9rx" kind="presentation" modalPresentationStyle="fullScreen" id="p2b-bX-VDL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聖徳太子の楽しいクイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-s8-rep">
@@ -488,7 +478,7 @@
         <!--Result View Controller2-->
         <scene sceneID="JDx-3c-B4l">
             <objects>
-                <viewController id="H5C-cV-MKS" customClass="ResultViewController2" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultView2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H5C-cV-MKS" customClass="ResultViewController2" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="esh-h3-yXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -521,21 +511,22 @@
                         <color key="backgroundColor" red="0.5527758002281189" green="0.80948126316070557" blue="0.91554492712020874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="S44-UR-ZD7" id="MGu-09-mrA"/>
+                        <outlet property="resultLabel2" destination="S44-UR-ZD7" id="k7F-2P-61s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF1-8C-H6d" sceneMemberID="firstResponder"/>
                 <exit id="q6p-FS-WOT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="1565"/>
+            <point key="canvasLocation" x="1693" y="1363"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon.png" width="21.600000381469727" height="21.600000381469727"/>
         <image name="start.png" width="148.32000732421875" height="60.479999542236328"/>
         <image name="なにいうてるかわからん.png" width="384" height="384"/>
+        <image name="クイズ大会.png" width="480" height="360"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
